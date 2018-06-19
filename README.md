@@ -2,7 +2,7 @@
 
 ## Installation
 
-The `verify-sig` commands assume that you already installed [git-sign](https://github.com/pflanze/git-sign.git); if you don't want to verify code integrity, ignore those.
+The `verify-sig` commands assume that you already installed [git-sign](https://github.com/pflanze/git-sign); if you don't want to verify code integrity, ignore those.
 
 	cd /opt/chj
 	git clone https://github.com/pflanze/ssh-config-gen.git
@@ -20,7 +20,7 @@ reachable if you use the latter. If you don't, add
 Run `concentrate start` to regenerate `/etc/hosts` when wanting to
 concentrate, `concentrate stop` otherwise.
 
-Note: [chj-bin](https://github.com/pflanze/chj-bin.git) also contains
+Note: [chj-bin](https://github.com/pflanze/chj-bin) also contains
 `astart` and `astop` wrappers to make the above commands shorter.
 
 ## TODO
