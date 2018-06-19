@@ -1,0 +1,168 @@
+127.0.0.1	localhost
+
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+
+
+#  -----------------------------------------------
+
+# Anti attack + speedup
+80.86.106.3 	live.eliberadio.ro
+193.218.104.244	streaming.swisstxt.ch
+84.16.67.141	broadcast.infomaniak.net
+199.48.144.20	cerebrum.dnalounge.com
+#192.33.91.34	relay-radius.ethz.ch
+2001:67c:10ec:49c3::122	relay-radius.ethz.ch
+
+# since normal resolution is so slow
+62.146.26.38 dict.leo.org
+
+# ------------------------------------------------
+
+
+%if MODE_CONCENTRATE
+127.0.0.1  news.ycombinator.com xkcd.com www.xkcd.com jwz.org www.jwz.org
+127.0.0.1  youtube.com www.youtube.com
+#127.0.0.1  en.wikipedia.org
+127.0.0.1  news.google.com news.google.co.uk news.google.ch news.google.ca
+%endif
+
+
+# ------------------------------------------------
+# avoid tracking
+
+127.0.0.1 google-analytics.com
+127.0.0.1 ssl.google-analytics.com
+127.0.0.1 www.google-analytics.com
+
+#from a HN discussion on an https://motherboard.vice.com/ article
+127.0.0.1 vice-web-statics-cdn.vice.com
+127.0.0.1 d31qbv1cthcecs.cloudfront.net
+127.0.0.1 d5nxst8fruw4z.cloudfront.net
+127.0.0.1 b.scorecardresearch.com
+# ^ had scorecardresearch already, case of subdomains, todo
+127.0.0.1 advice-ads-cdn.vice.com
+127.0.0.1 vice-publishers-cdn.vice.com
+127.0.0.1 vice-sundry-assets-cdn.vice.com
+
+127.0.0.1 t.trackedlink.net
+127.0.0.1 ad.doubleclick.net doubleclick.net googleadservices.com
+127.0.0.1 ads.yahoo.com
+127.0.0.1 googlesyndication.com googletagservices.com 
+127.0.0.1 mookie1.com quantserve.com serving-sys.com
+127.0.0.1 plus.googleapis.com
+# ^ needed for youtube comments?
+#127.0.0.1 apis.google.com
+# ^ needed for youtube comments, too
+
+# whois: google
+127.0.0.1 ggpht.com 2mdn.net
+# whois: Evidon, Inc.
+127.0.0.1 c.betrad.com
+# Lotame Solutions, Inc.  -- "crowd control" ? ?
+127.0.0.1 crwdcntrl.net
+
+#youtube img?:
+127.0.0.1 ytimg.com gstatic.com ggpht.com
+
+%if !FACEBOOK
+127.0.0.1     facebook.net connect.facebook.net
+127.0.0.1     facebook.com www.facebook.com
+127.0.0.1     s-static.ak.facebook.com
+127.0.0.1     static.ak.facebook.com
+127.0.0.1     fbstatic-a.akamaihd.net
+%endif
+
+%if !TWITTER
+127.0.0.1	twitter.com www.twitter.com platform.twitter.com t.co
+%endif
+
+%if !APPLE
+# https://itunes.apple.com/us/app/1024!/id823499224
+127.0.0.1	itunes.apple.com apple.com www.apple.com
+%endif
+
+%if !YAHOO
+127.0.0.1 yahoo.com
+%endif
+
+
+# from cookies amazon.de
+127.0.0.1 adform.net www.adform.net server.adform.net
+127.0.0.1 adnxs.com www.adnxs.com  ib.adnxs.com ib.anycast.adnxs.com
+127.0.0.1 burstnet.com www.burstnet.com
+127.0.0.1 quantserve.com www.quantserve.com
+127.0.0.1 rubiconproject.com www.rubiconproject.com tap.rubiconproject.com
+127.0.0.1 scorecardresearch.com www.scorecardresearch.com
+127.0.0.1 pubmatic.com www.pubmatic.com
+127.0.0.1 specificclick.net www.specificclick.net
+127.0.0.1 openx.net www.openx.net  u.openx.net prod-mkt-d.d.xx.openx.com.akadns.net us-u.openx.net 
+127.0.0.1 contextweb.com www.contextweb.com
+127.0.0.1 www.myhabit.com www.shopbop.com www.zvab.com www.createspace.com www.bookdepository.com www.audible.de de.buyvip.com www.abebooks.de contextweb.map.fastly.net hasotest.pubmatic.com.edgesuite.net g.geogslb.com   pagead.l.doubleclick.net bh.contextweb.com image5.pubmatic.com  cm.g.doubleclick.net  pagead46.l.doubleclick.net  pagead2.googlesyndication.com aax-eu.amazon-adsystem.com  dart.l.doubleclick.net ad.de.doubleclick.net
+127.0.0.1 stats.g.doubleclick.net
+
+127.0.0.1 www.imdb.de amazon-presse.de www.amazon-logistikblog.de partnernet.amazon.de amazon-presse.de
+
+# well and  www.amazon.es. rewrite-eu.amazon.com.  www.amazon.at. www.amazon.nl. www.amazon.com.mx. www.amazon.ca. www.amazon.co.jp. www.amazon.it. www.amazon.co.uk. www.amazon.fr. www.amazon.cn. www.amazon.com.br. www.amazon.com.au. payments.amazon.de. rewrite-eu.amazon.com.  fls-eu.amazon.com. kdp.amazon.de. kdp.amazon.de.  fls-eu.amazon.de. services.amazon.de. 
+
+
+# from https://news.ycombinator.com/item?id=8758915 (from a Dr. Dobb's page)
+
+127.0.0.1     cmp.112.2o7.net
+127.0.0.1     a.adroll.com
+127.0.0.1     d.adroll.com
+127.0.0.1     ct1.addthis.com
+127.0.0.1     m.addthis.com
+127.0.0.1     s7.addthis.com
+127.0.0.1     ib.adnxs.com
+127.0.0.1     secure.adnxs.com
+#^ wow, adnxs various already but not this one
+127.0.0.1     adserver.adtechus.com
+127.0.0.1     imp2.bizographics.com
+127.0.0.1     js.bizographics.com
+127.0.0.1     www.bizographics.com
+127.0.0.1     admin.brightcove.com
+127.0.0.1     a.brightcove.com b.brightcove.com c.brightcove.com d.brightcove.com
+# ^ how many?
+127.0.0.1     i.cmpnet.com
+127.0.0.1     disqus.com
+127.0.0.1     content.dl-rms.com
+127.0.0.1     drdobbs.disqus.com
+127.0.0.1     googleads.g.doubleclick.net
+127.0.0.1     a.disquscdn.com
+127.0.0.1     s2150.t.eloqua.com
+127.0.0.1     s657486201.t.eloqua.com
+127.0.0.1     img.en25.com
+127.0.0.1     www.google-analytics.com
+127.0.0.1     partner.googleadservices.com
+127.0.0.1     www.googleadservices.com
+127.0.0.1     www.googletagmanager.com www-googletagmanager.l.google.com 
+%if !GOOGLEAPIS
+127.0.0.1     ajax.googleapis.com
+127.0.0.1     fonts.googleapis.com fonts.gstatic.com
+%endif
+127.0.0.1     tpc.googlesyndication.com
+127.0.0.1     www.googletagservices.com
+127.0.0.1     ml314.com
+
+%if !LINKEDIN
+127.0.0.1     platform.linkedin.com
+127.0.0.1     www.linkedin.com ch.linkedin.com
+127.0.0.1     uk.linkedin.com us.linkedin.com
+127.0.0.1     static.licdn.com
+%endif
+
+127.0.0.1     i.techweb.com
+127.0.0.1     ins.techweb.com
+127.0.0.1     ng.techweb.com
+127.0.0.1     cdn.syndication.twitter.com
+127.0.0.1     twimgs.com
+127.0.0.1     thewallstreetwiki.com
+127.0.0.1     i.ubm-us.net
+127.0.0.1     dev.visualwebsiteoptimizer.com
+
+127.0.0.1     netdna.bootstrapcdn.com
