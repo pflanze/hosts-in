@@ -24,7 +24,7 @@ fi
 
 PATH=/opt/chj/ssh-config-gen/:"$PATH"
 
-infile=/etc/hosts-in
+infile=/opt/chj/hosts-in/hosts-in
 outfile=/etc/hosts
 
 mycpp () {
