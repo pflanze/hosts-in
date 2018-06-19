@@ -20,6 +20,8 @@ reachable if you use the latter. If you don't, add
 Run `concentrate start` to regenerate `/etc/hosts` when wanting to
 concentrate, `concentrate stop` otherwise.
 
+Note: [chj-bin](https://github.com/pflanze/chj-bin.git) also contains
+`astart` and `astop` wrappers to make the above commands shorter.
 
 ## TODO
 
